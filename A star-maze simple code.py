@@ -1,20 +1,12 @@
-#!/usr/bin/env python
-# coding: utf-8
 
 # A* search algorithm is used to find the shortest path between the source and destination on image that represents a map or a maze.
-
-# # Importing modules
-
-# In[10]:
 
 
 from pyamaze import maze,agent,textLabel
 from queue import PriorityQueue
 
 
-# # Heuristic function
-
-# In[11]:
+ # Heuristic function
 
 
 def h (cell1, cell2):
@@ -24,9 +16,7 @@ def h (cell1, cell2):
     return abs(x1-x2) + abs(y1-y2)
 
 
-# # A* function
-
-# In[12]:
+# A* function
 
 
 def aStar(m):
@@ -72,10 +62,7 @@ def aStar(m):
     return fwdPath
 
 
-# # Executing source code module
-
-# In[ ]:
-
+# Executing source code module
 
 if __name__ == '__main__':
     m = maze(20,20)
@@ -89,7 +76,6 @@ if __name__ == '__main__':
     m.run()
 
 
-# In[ ]:
 
 
 
